@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>JS + CSS Clock</title>
-  <script src="/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS + CSS Clock</title>
+        <script src="/script.js"></script>
 </head>
 <body>
 
@@ -19,7 +19,7 @@
 
   <style>
     html {
-      background: #018DED url(https://unsplash.it/1500/1000?image=881&blur=5);
+      background: #018DED url(/hourglass-620397_1280.jpg);
       background-size: cover;
       font-family: 'helvetica neue';
       text-align: center;
@@ -60,7 +60,19 @@
     .hand {
       width: 50%;
       height: 6px;
-      background: black;
+      background: rgb(201, 57, 57);
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition: all 0.05s;
+      transition-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+
+    .hour-hand {
+      width: 50%;
+      height: 6px;
+      background: rgb(91, 145, 22);
       position: absolute;
       top: 50%;
       transform-origin: 100%;
